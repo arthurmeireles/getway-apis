@@ -1,13 +1,20 @@
 const app = require('express')();
 
 
-function multiplicacao(a){
+function parImpar(a){
     console.log(a);
-    return ++a;
+    const resto = a%2;
+    if( resto == 0){
+        console.log("Par");
+        return "Par";
+    }
+    if( resto == 1){
+        console.log("Impar");
+        return "Impar";
+    }
 }
 
-
-app.get('/users', (req, res) => res.send(multiplicacao(req.params.num)));
+app.get('/users', (req, res) => res.send(parImpar(req.query.a)));
 
 
 

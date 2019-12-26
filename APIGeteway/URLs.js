@@ -1,6 +1,6 @@
 //Esse cara será o nosso ponto central de URLs dos nossos microsserviços. 
-//Sempre que tivermos uma URL nova, ou alterada, temos que vir nesse arquivo.
 
+//Sempre que tivermos uma URL nova, ou alterada, temos que vir nesse arquivo não esqueça disso .
 module.exports = {
   USERS_API_URL: 'http://localhost:3001/users',
   PRODUCTS_API_URL: 'http://localhost:3002/products',

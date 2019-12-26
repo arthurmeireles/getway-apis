@@ -23,8 +23,10 @@ const productsServiceProxy = httpProxy(PRODUCTS_API_URL);
 app.get('/', (req, res) => res.send('Hello Gateway API'));
 
 //criamos uma rota GET /users, que recebe 3 parâmetros, req, res e next. 
+
 //E a única coisa que essa rota faz, é repassar todos esses caras pro userServiceProxy. 
 app.get('/users', (req, res, next) => userServiceProxy(req, res, next));
+
 //O mesmo acontece aqui na rota /products, passando pra productsServiceProxy.
 app.get('/products', (req, res, next) => productsServiceProxy(req, res, next));
 

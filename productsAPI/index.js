@@ -2,9 +2,7 @@
 const app = require('express')(); // instancia o express
 function soma(a, b){
 
-
     console.log('esse é a:'+ a);
-
     console.log('esse é b:'+ b);
     const soma = (a+b);
     return soma;
